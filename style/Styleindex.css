@@ -1,0 +1,371 @@
+@font-face {
+    /*AQUÍ DESCARGUE E IMPORTE UNA FUENTE */
+    font-family: Exo;
+    src: url("../fonts/Exo-VariableFont_wght.ttf");
+}
+
+* {
+
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    color: #3c3c3c;
+    user-select: none;
+    /*// Aqui instale la fuente en toda la pagina en general con el * //*/
+    font-family: "Exo", sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*///////// MODIFICANDO EL SCROLL////////*/
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6881ff;
+
+}
+
+/*////// md scroll fin ////////*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 0px 4px #0000003b;
+}
+
+/*/////// Index Header //////////*/
+
+#indexHeader {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    position: fixed;
+    z-index: 1111;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 8px 0 #1e1e1ead;
+}
+
+#indexHeader a p {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#indexHeader p {
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+.dolarActual {
+    padding-right: 5%;
+}
+
+#indexHeader a {
+    margin-left: 5%;
+}
+
+.ingresarbtn {
+    display: none;
+}
+
+/* ///// TEXT HEADER ///// */
+
+.textHeader {
+    padding-top: 9%;
+    position: relative;
+    height: 75vh;
+    background-color: rgb(32, 32, 32);
+}
+
+.containerBg {
+    padding-top: 1.5%;
+
+}
+
+.mgContainer {
+    padding-left: 2rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    width: 55%;
+    color: #fdff92;
+}
+
+.subtitle {
+    margin-top: 4%;
+    font-size: 0.9rem;
+    font-weight: 560;
+    width: 50%;
+    color: rgb(213, 213, 213);
+
+}
+
+
+.ingTitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 3.3%;
+    color: #e7e7e7;
+
+}
+
+.ingComo {
+    margin-top: 3%;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #5487ffe3;
+    border-radius: 5px;
+    width: 40%;
+
+}
+
+.ingComoBtn:focus {
+    outline: none;
+}
+
+.ingresarBtn {
+    padding: 2%;
+
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    justify-content: center;
+}
+
+.ingresarBtn p {
+    color: white;
+    margin: 0 5% 0 0;
+
+}
+
+.menuDesplegable,
+.ingresarBtn {
+    /* ESTOY CAMBIANDOLE EL COLOR A LOS 2 */
+    background-color: #4a73d3;
+
+}
+
+.menuDesplegable {
+    display: none;
+    /* Oculta el menú por defecto */
+    position: relative;
+    /* Posicionamiento relativo */
+    /*top: 40px; */
+    /* Elimina la posición superior */
+    left: 0;
+    /* Posiciona a la izquierda del botón */
+    width: 100%;
+    /* Ancho del menú */
+    transition: display 0.3s ease;
+
+    z-index: 1;
+    /* Asegura que el menú se muestre sobre otros elementos */
+    box-shadow: 0 7px 6px 0 #12121251;
+    margin: 0;
+    padding: 0 0 0.1px 0;
+}
+
+.menuDesplegable ul {
+    list-style: none;
+    /* Elimina los puntos de lista */
+    padding: 0;
+    /* Elimina el relleno interno */
+    margin: 0;
+    /* Elimina el margen interno */
+}
+
+.menuDesplegable li {
+    margin-bottom: 10px;
+    /* Espacio entre elementos de la lista */
+
+}
+
+.menuDesplegable a {
+    display: block;
+    /* Ocupa todo el ancho del elemento */
+    padding: 2%;
+    /* Ajuste del relleno interno */
+    text-decoration: none;
+    /* Elimina la decoración del texto */
+    color: #ffffff;
+    /* Color del texto */
+    letter-spacing: 1.3px;
+    font-size: 1rem;
+    margin-left: 1%;
+    font-weight: 500;
+}
+
+.menuDesplegable li:hover {
+    background-color: #ededed20;
+    /* Color de fondo al hover */
+}
+
+.btnImg {
+    width: 3.5%;
+    filter: invert(1) brightness(2);
+
+    margin-right: 5%;
+
+}
+
+.ImagenHeader img {
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+
+/*//// Listas //// */
+
+.listDescription {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: -2.5%;
+    justify-content: center;
+}
+
+.listShape {
+    background-color: white;
+    width: 20%;
+    height: 22vh;
+    position: relative;
+    padding: 2%;
+    border-radius: 5px;
+
+    margin-right: 2%;
+    box-shadow: 0px 1px 7px 0px #38373789;
+
+}
+
+.text-list-Bod {
+    font-weight: 550;
+    font-size: 0.8rem;
+    color: #605f5f;
+    margin-top: 7%;
+}
+
+.listTitle {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+.listGo {
+    width: 5%;
+}
+
+.listShape:hover .ir {
+    margin-right: 10%
+}
+
+.ir {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: absolute;
+    margin-right: 12%;
+    margin-bottom: 5%;
+    bottom: 0;
+    right: 0;
+    transition: all ease 0.2s;
+}
+
+.ir p {
+    margin-right: 3%;
+    color: #6881ff;
+}
+
+hr {
+    border: solid #cbcbcb 1.2px;
+}
+
+/*////////////// ABOUT US ///////////////////*/
+
+#aboutUs {
+    height: 80vh;
+    position: relative;
+    margin-top: 9%;
+    margin-bottom: 2%;
+}
+
+.qHacemos {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 2%;
+    padding-bottom: 2%;
+}
+
+.listInfoDescript {
+    border-left: solid 5px #7c78f3d3;
+    border-radius: 4px;
+    margin-left: 0.8%;
+
+
+}
+
+.listInfoDescript .mgInfo {
+    padding: 0.9%;
+}
+
+.listInfoShape {
+    width: 50%;
+    margin-left: 2%;
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px #32323298;
+    border-radius: 8px;
+    padding: 1% 2% 1% 2%;
+}
+
+.listInfo p {
+    margin: 1%;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #3f3f3fe9;
+}
+
+.infoImg {
+    width: 5.2%;
+    margin-left: -2%;
+}
+
+.membersImg {
+    width: 36%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 40px;
+    margin-top: 3%;
+}
+
+/*////////////////// REGISTRO INV /////////////////////*/
+
+#RegistroInv {
+    margin-top: 8%;
+    height: 70vh;
+    background-color: #202020;
+}

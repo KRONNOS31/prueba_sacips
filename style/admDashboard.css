@@ -1,0 +1,686 @@
+@font-face {
+    /*AQUÍ DESCARGUE E IMPORTE UNA FUENTE */
+    font-family: Exo;
+    src: url("../fonts/Exo-VariableFont_wght.ttf");
+}
+
+* {
+    font-family: "Exo", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* 
+HEADER */
+
+
+
+.headerDashboard {
+    background-color: #f6f6f6;
+    padding: 0.8% 0 1% 0;
+    box-shadow: 0 0 6px 0 #373737ba;
+    z-index: 111;
+
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4% 0 4%;
+    position: relative;
+
+}
+
+
+.headerDashboard h3 {
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 5px #00000013;
+    color: rgba(54, 54, 54, 0.95);
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+
+
+.sectionHeader {
+    height: 50vh;
+    z-index: 0;
+    background: linear-gradient(60deg,
+
+
+            #9ebcfc92,
+            #f8949489,
+            #9ab8fa86);
+    position: relative;
+    box-shadow: inset 0 0 100px 0 #64646420;
+}
+
+
+.iconHeader {
+    width: 2.1%;
+
+}
+
+
+.iconHeaderAdv {
+    width: 2.1%;
+    right: 55px;
+    top: -6px;
+    position: absolute;
+}
+
+/* ESTADISTICAS  */
+
+.sectionHeader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.estadisticas {
+
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+
+}
+
+.estadisticasShape {
+    background-color: white;
+    width: 100%;
+}
+
+/* TABLA DE MOVIMIENTOS GENERALES */
+
+.movsTitleUpper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pagmovs {
+    display: flex;
+    margin-right: 4%;
+}
+
+.pagmovs p {
+    margin: 0 2% 0 2%;
+}
+
+
+.pagmovs p,
+.pagmovs button {
+    color: #232323;
+    font-weight: 600;
+
+    font-size: 0.8rem;
+    z-index: 111;
+
+}
+
+.coment .buttonDashboard {
+    color: #ffffff;
+    background-color: #e16c6c;
+}
+
+.movsTitleUpper .pagmovs button {
+    cursor: pointer;
+    border: none;
+}
+
+
+.movimientosGenerales {
+    margin-top: -6%;
+    position: relative;
+}
+
+.tableDashboard {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.tableDashboard table {
+
+    box-sizing: border-box;
+
+}
+
+.tablaMovimientosGenerales::-webkit-scrollbar {
+    display: none;
+}
+
+.tableMovsGeneral {
+    width: 96%;
+    overflow: auto;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.tablaMovimientosGenerales {
+
+
+    margin-bottom: 1%;
+}
+
+.tablaMovimientosGenerales .h1MovsTitle {
+    font-size: 1.1rem;
+    margin-left: 2%;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #3a3a3ae4;
+    text-shadow: 2px 2px 5px #00000021;
+
+    margin-bottom: 1%;
+
+}
+
+
+.movIngreso {
+    color: #3e7a45;
+}
+
+.movEgreso {
+    color: #b12b2b;
+    width: 10%;
+}
+
+.tableMovsGeneral td {
+    padding: 0.5% 1% 0.5% 1%;
+    margin: 1%;
+    font-size: 0.6rem;
+    width: auto;
+    height: 10vh;
+    letter-spacing: 1.2px;
+    border: none;
+}
+
+.tableMovsGeneral td,
+.tableMovsGeneral th,
+.tableMovsGeneral .t-head {
+
+    border-bottom: 1px solid #00000046;
+}
+
+.conceptMovs {
+    color: #000000e8;
+    font-weight: bold;
+}
+
+
+td .buttonVigilancia {
+    background-color: #ffffff00;
+
+    border: none;
+    position: relative;
+}
+
+
+button .imgVigilancia {
+    /* ///// icono del ojo ////// */
+    width: 35%;
+
+}
+
+button .imgNewMensaje {
+    /* ///// icono de la noti en el ojo ////// */
+    width: 20%;
+    left: 2em;
+    top: 0;
+
+    position: absolute;
+}
+
+
+.cabezaTh {
+    background-color: #e2e2e2;
+    border: none;
+    letter-spacing: 0.1rem;
+    color: #000000c3;
+
+}
+
+
+
+.buttonDashboard {
+    font-size: 0.7rem;
+    color: #ffffff;
+    background-color: #0030ee9b;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+
+
+
+/* GESTIONA, accesibilidad */
+
+.hdrPerfil {
+
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hdrPerfilShape {
+    background-color: #ffffff;
+    width: 70%;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 0 8px 0 #4e4e4e58;
+}
+
+.iconGstHeader {
+    width: 12%;
+    margin-right: 2%;
+}
+
+.textPerfilHeader {
+    width: 100%;
+}
+
+.textPerfilHeader p,
+.textPerfilHeader h2 {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    font-size: 0.9rem;
+}
+
+.textPerfilHeader h2 {
+    color: #161616e6;
+    font-weight: 700;
+    font-size: 1.3rem;
+
+}
+
+.textPerfilHeader p {
+    color: #2f2f2fe6;
+    margin-bottom: 1%;
+}
+
+
+
+.btnGstHeaderPerfil {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnGstHeaderPerfil button {
+
+    width: 60%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+
+
+
+/* 
+////GESTION DE USUARIOS MODERADORES/// */
+.admModerador {
+    overflow: auto;
+    height: 45vh;
+    margin-top: -4%;
+}
+
+.admModerador p,
+.admModerador h2 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.1px;
+
+}
+
+.admModerador h2 {
+    font-size: 1rem;
+    color: #232323;
+}
+
+.admModerador p {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #1b1b1bc1;
+}
+
+p span {
+    color: #404096;
+}
+
+.admModShape {
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Esto asegura que haya espacio entre las cajas */
+    width: 100%;
+
+}
+
+.admModerador::-webkit-scrollbar {
+    background-color: white;
+    width: 8px;
+}
+
+.admModerador::-webkit-scrollbar-thumb {
+    background-color: #3b387e9c;
+}
+
+
+.hrMod hr {
+    margin: 2% 0 2% 0;
+    padding: 0;
+}
+
+.admModPerfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(50% - 2%);
+    /* Aquí se ajusta el ancho para que sean dos cajas por fila */
+    background-color: #ffffff;
+    box-shadow: 0 0 6px 0 #24242452;
+    padding: 1%;
+    border-radius: 7px;
+    margin: 0.8% 1% 0 1%;
+    /* Aquí se ajusta el margen para que haya espacio entre las cajas */
+    box-sizing: border-box;
+    /* Esto asegura que el padding y el margen se incluyan en el ancho de la caja */
+}
+
+
+
+.textModProfile {
+    display: flex;
+    align-items: center;
+}
+
+.iconModUser {
+    width: 20%;
+    margin-right: 3%;
+}
+
+.ModPerfilButtons {
+    width: 80%;
+}
+
+.ModPerfilButtons button {
+
+    background-color: #00000000;
+    border: 2px solid #426ceab9;
+    color: #426ceab9;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    padding: 3% 8% 3% 8%;
+
+    cursor: pointer
+}
+
+
+/* //////////////////////// .ModerarPrioridad /////////////////// */
+
+.ModerarPrioridad {
+    text-align: center;
+    margin: 1% 1% 1% 1%;
+    position: relative;
+}
+
+.ModerarPrioridad h3 {
+    margin: 3% 0 1% 0;
+    padding: 0;
+
+}
+
+.infoOpcionPrioridad h3 {
+    font-size: 1.5rem;
+    color: #161616e6;
+}
+
+.infoTexto {
+    text-align: left;
+}
+
+.infoOpcionPrioridad p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1b1b1bc1;
+}
+
+.modPrioridadShape {
+
+    display: flex;
+    padding: 0 1% 0 1%;
+}
+
+.opcionPrioridad {
+    width: 60%;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 2%;
+}
+
+.opciones p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.iconModPrioridad {
+    width: 15%;
+    margin-right: 5%;
+}
+
+.infoOpcionPrioridad {
+    display: flex;
+    align-items: center;
+}
+
+
+.deletePrioridad {
+    position: absolute;
+    bottom: -48px;
+    left: 0;
+    margin-left: 2%;
+    padding: 0.5%;
+    border: none;
+    border-radius: 7px;
+    color: #d03434e3;
+    cursor: pointer;
+}
+
+
+
+/* BOTON DESLIZANTE */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #ccc;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #ccc;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.checkbox_op{
+    height: 25px;
+    width: 50px;
+    background-color: #a0a0a0;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding:0px 0px;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+}
+.checkbox_op div{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 100%;
+    margin: 0px;
+    transition: 0.2s linear;
+    transform: translateX(5px);
+}
+
+.checkbox_op:checked{
+    background-color: #5452ff;
+}
+
+.ModerarPrioridad{
+    position: relative;
+    height: 40vh;
+    background-color: #c9c9c9;
+}
+.ModerarPrioridad h3{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.modPrioridadShape{
+    padding: 0px;
+    height: 70%;
+    position: relative;
+    box-sizing: border-box;
+}
+.infoOpcionPrioridad{
+    background-color: rgb(212, 212, 212);
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.infoOpcionPrioridad img{ 
+    height: 100px;
+    width: 100px;
+}
+.admModerador{
+    height: 40vh;
+}
+.contenedor_botones{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor_botones div{
+    background-color: #5452ff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.contenedor_botones div:hover{
+    
+    background-color: #3f3dc7;
+}
+.opcionPrioridad{
+    position: relative !important;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: #dadada;
+}
+.opcionPrioridad input[type='checkbox']{
+    display: none;
+}
+.op_container{
+    width: 100%;
+    display: none;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px !important;
+    font-size: 20px;
+}
+
+.deletePrioridad{
+    position: relative;
+    bottom: 0px;
+}
+.textModProfile{
+    width: 70%;
+}
+.textModProfile img{
+    
+    width: 80px !important;
+    height: 80px !important;
+}
+.ModPerfilButtons{
+    width: 30%;
+}

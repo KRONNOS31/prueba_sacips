@@ -1,0 +1,187 @@
+/*  COLOR DE LOS BOTONES #636fce */
+
+.aHeader {
+  padding-bottom: 4%;
+}
+.aTitulo{
+  margin-top: 0.7em;
+}
+.aTitulo,
+.aStitulo {
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  color: #636fce;
+}
+.aStitulo {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.cuadroFormulario {
+  width: 100%;
+  height: 91%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formularioAfiliados {
+  width: 60%;
+  padding: 0.5em 6em 2em 6em;
+  background-color: #ffffff;
+
+  box-shadow: 0 0 6px 0 #00000042;
+  position: relative;
+}
+.cuadroFormulario #formularioAfiliados div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8em;
+}
+#formularioAfiliados input[type="text"], #formularioAfiliados input[type="number"] {
+  width: 50%;
+  border: none;
+  border-radius:7px;
+  background-color: #b6b9c01c;
+  text-align: center;
+  padding: 0.7em 0.4em 0.7em 0.4em;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.cuadroFormulario #formularioAfiliados .banco select {
+  width: 60%;
+  border: 1px solid #ffffff; /* Establece un borde delgado y de color gris claro */
+  box-shadow: 0 2px 0 0 #636fce;
+ 
+  outline: none; /* Elimina el contorno al hacer clic */
+  padding: 0.3em; /* Agrega un poco de espacio interno para que no se vea tan pegado al texto */
+  text-align: center;
+}
+
+
+
+#formularioAfiliados input[type="text"]::placeholder {
+  font-weight: 400;
+  color: #868686;
+  font-size: 0.7rem;
+  letter-spacing: 1.2px;
+}
+
+#formularioAfiliados textarea {
+  text-align: center;
+
+  outline: none;
+}
+.subirReferencia {
+  width: 100%;
+  padding-top: 2%;
+}
+.mostrarimg,
+.subirReferencia #imagenPrevia {
+  width: 4em;
+  height: 4em;
+}
+.mostrarimg {
+  background-image: url("../img/capture.png");
+  background-size: cover;
+}
+
+.subirImagen {
+  display: flex;
+  align-items: center;
+  border: solid 1.5px #636fce;
+  padding: 0.8%;
+  width: 35%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.subirImagen p {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 500;
+
+  color: #636fce;
+}
+
+.imglabel {
+  filter: saturate(200%);
+  width: 17px;
+  margin-right: 8%;
+}
+
+
+.btnEnviar input[type="submit"]{
+  background-color: #636fce;
+  width: 30%;
+  padding: 1.2%;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.7rem;
+  position: absolute;
+  
+  bottom: 0;
+  left: 34.5%;
+  margin-bottom: 1em;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  border-radius: 12px;
+  /* Añade esta línea para centrar horizontalmente */
+}
+
+/* //////// recibo ///////////// */
+
+.txtAreaRecibo,
+.fechaRecibo {
+ 
+  font-size: 0.7rem;
+}
+
+.txtAreaRecibo {
+  margin-top: 1%;
+  width: 50%;
+  height: 2em;
+   font-weight: 500;
+  border: none;
+}
+
+.btnVolver {  
+
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.btnVolver label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#btnVolverRecibo{
+  background-color: #ffffff00;
+  color: #3e3e3e;
+  border: none;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.imgVolver {
+  width: 18px;
+  margin-right: 10%;
+}
+
+.txtVolver {
+  font-size: 0.7rem;
+  letter-spacing: 1.2px;
+  margin: 0;
+}
