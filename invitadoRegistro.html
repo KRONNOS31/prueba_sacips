@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro de invitados</title>
+	<link rel="stylesheet" href="style\inv-register.css">
+
+</head>
+
+<body>
+
+	<div class="b-h">
+		<a class="v-inicio" href="index.html">
+			<img src="/img/home.png" alt="">
+			<p>Volver al Inicio</p>
+		</a>
+	</div>
+	<div class="moverF">
+
+
+		<div class="titulo">
+
+			<p class="title">Registro de invitados</p>
+
+			<p class="s-title">Regístrate como</p>
+
+			<select id="tipoRegistro">
+				<option value="persona">Persona</option>
+				<option value="servicio">Servicio</option>
+			</select>
+		</div>
+		<div class="register-inv">
+
+			<form id="registroForm">
+
+				<div id="formularioPersona">
+					<div class="errormesage">
+						<span id="errorCedulaPersona" class="error">Cédula no válida</span>
+						<span id="errorCorreoPersona" class="error">Correo electrónico no válido</span>
+						<span id="errorContrasenaPersonaEspecial" class="error">Falta caracter especial</span>
+						<span id="errorContrasenaPersonaMayuscula" class="error">Falta mayúscula</span>
+						<span id="errorContrasenaPersonaNumero" class="error">Falta número</span>
+						<span id="errorContrasenaPersonaNoCoinciden" class="error">Las contraseñas no coinciden</span>
+					</div>
+					<div>
+						<p for="nombrePersona">Nombre completo</p>
+						<input type="text" id="nombrePersona" required>
+					</div>
+
+					<div>
+						<p for="documentoPersona">Documento de identidad</p>
+						<input type="text" value="V-" id="documentoPersona" required>
+						
+					</div>
+
+					<div>
+						<p for="correoPersona">Correo electrónico</p>
+						<input type="email" id="correoPersona" required>
+						
+					</div>
+
+					<div>
+						<p for="contrasenaPersona">Contraseña</p>
+						<input type="password" id="contrasenaPersona" required>
+
+					</div>
+
+					<div>
+						<p for="confirmarContrasenaPersona">Confirmar contraseña</p>
+						<input type="password" id="confirmarContrasenaPersona" required>
+						
+					</div>
+					<div class="b-footer">
+						<button type="submit">Registrarse</button>
+						<p>o</p>
+						<a class="i-sesion" href="/LoginInvitados.html">Inicia Sesión</a>
+					</div>
+				</div>
+
+
+				<div id="formularioServicio" style="display: none;">
+					<div class="errormesage">
+						<span id="errorContrasenaServicioEspecial" class="error">Falta caracter especial</span>
+						<span id="errorContrasenaServicioMayuscula" class="error">Falta mayúscula</span>
+						<span id="errorContrasenaServicioNumero" class="error">Falta número</span>
+						<span id="errorRifServicio" class="error">RIF no válido</span>
+						<span id="errorCorreoServicio" class="error">Correo electrónico no válido</span>
+						<span id="errorContrasenaServicioNoCoinciden" class="error">Las contraseñas no coinciden</span>
+					</div>
+					<div>
+						<p for="nombreServicio">Empresa:</p>
+						<input type="text" id="nombreServicio" required>
+					</div>
+
+					<div>
+						<p for="rifServicio">RIF:</p>
+						<input type="text" id="rifServicio" value="J-" required pattern="J- j-\d{8}">
+						
+					</div>
+
+					<div>
+						<p for="correoServicio">Correo electrónico:</p>
+						<input type="email" id="correoServicio" required>
+						
+					</div>
+
+					<div>
+						<p for="contrasenaServicio">Contraseña:</p>
+						<input type="password" id="contrasenaServicio" required>
+
+					</div>
+
+					<div>
+						<p for="confirmarContrasenaServicio">Confirmar contraseña:</p>
+						<input type="password" id="confirmarContrasenaServicio" required>
+						
+					</div>
+
+
+					<div class="b-footer">
+						<button type="submit">Registrarse</button>
+						<p>o</p>
+						<a class="i-sesion" href="/LoginInvitadoServicio.html">Inicia Sesión</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<script src="/js/masOpciones.js"></script>
+
+</body>
+
+</html>

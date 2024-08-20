@@ -1,0 +1,153 @@
+<!-- Modulo de los afiliaddos(Gabriel)-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/style/style-afiliados2.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>SACIPS | Afiliados</title>
+</head>
+
+<body>
+
+  <section class="bl-all">
+
+    <div class="barra-lateral">
+      <div class="bl-mg">
+
+        <div class="bl-header">
+          <img src="img/FAVICON.ico" alt="FAVICON">
+          <p class="ptittle">Instituto de Prevision Social</p>
+        </div>
+
+        <div class="bl-body">
+
+
+          <button  id="aPerfil" class="b-bl"><img src="/img/member.png" class="ico-bl" alt="">
+            <p>Perfil</p>
+          </button>
+          <button id="aMovimientos" class="b-bl"><img src="/img/movs.png" class="ico-bl" alt="">
+            <p>Consultar</p>
+          </button>
+          <button id="aAportar" class="b-bl"><img src="/img/wallet.png" class="ico-bl" alt="">
+            <p>Aportar</p>
+          </button>
+
+          
+        </div>
+
+        <div class="bl-footer">
+          <div class="t-footer">
+            <div class="dolar-usdc">
+              <a class="e-bl" href="index.html">
+                <p>Cerrar Sesión</p>
+              </a>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <!-- aquí esta el contenido completo lo que aparece en el medio, osea todo xd -->
+
+    <div id="af-container" class="bl-container-2">
+
+      <div class="inicio-afiliados">
+        <div class="bloque">
+          <div class="header-deuda">
+            <div class="deuda">
+
+              <p class="d-dolares">Debe <span class="d-dl-act">$2.00 USDC</span></p>
+              <p class="d-bs">Bs72.84 VES</p>
+            </div>
+
+
+            <img class="n-pago-img" src="./img/Campana.png" alt="">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-movs">
+        
+
+
+        <div class="barra-botones">
+          <p class="titulo-movs">Movimientos</p>
+
+          <div class="b-busqueda">
+            <select name="tipo" id="tipo">
+              <option disabled selected>Buscar por</option>
+              <option value="">Fecha</option>
+              <option value="">Aporte</option>
+              <option value="">Monto</option>
+            </select>
+            <input type="text" name="buscar" placeholder="Buscar" id="buscar">
+
+            <img src="/img/buscar.png" alt="">
+          </div>
+
+        </div>
+        <form action="">
+
+          <table>
+            <tr>
+
+              <th class="t-head">Aporte</th>
+              <th class="t-head">Estatus</th>
+              <th class="t-head">Monto</th>
+              <th class="t-head">Fecha</th>
+              <th class="t-head">Referencia</th>
+              <th class="t-head">Recibo</th>
+            </tr>
+            <tr>
+              <th class="t-body">Donación</th>
+              <td>Pendiente</td>
+              <td>$2.00</td>
+              <td>24-04-2024</td>
+              <td><button>mostrar</button></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="t-body">Estatuto</th>
+              <td class="aproveDon">Aprobado</td>
+              <td>$8.00</td>
+              <td>24-04-2024</td>
+              <td><button>mostrar</button></td>
+              <td><button>Descargar Recibo</button></td>
+            </tr>
+            <tr>
+              <th class="t-body">Donación</th>
+              <td>
+                <p class="declined">Declinado</p>
+                <button>Ver Motivo</button>
+              </td>
+              <td>$2.00</td>
+              <td>24-04-2024</td>
+              <td><button>mostrar</button></td>
+              <td></td>
+            </tr>
+          </table>
+            <div class="b-Nmovs">
+              <a href=""><</a>
+              <p>Pag 1</p>
+              <a href="">></a>
+            </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/ajax.js"></script>
+</body>
+
+</html>
