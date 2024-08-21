@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css"> <!--css de la barra lateral-->
+    <link rel="stylesheet" href="style/style-afiliados2.css">
+    <link rel="icon" href="img/IPSPUPTYAB-LOGO.ico">
+    <title>SACIPS | PAGAR</title>
+</head>
+
+<body>
+
+
+    <!-- aquí esta el contenido completo lo que aparece en el medio, osea todo xd -->
+
+        <div class="container-formulario"> <!---- formulario de gabriel -->
+
+            <!-- ya entramos al formulario, mas que todo al cuerpo -->
+
+            
+            <div class="formulario-body">
+                <div class="bloque-form">
+                    <form action="" method="post">
+
+                        <div class="nombre">
+                            <input type="text" placeholder="N o m b r e" required name="Nombre">
+
+                            <input type="text" placeholder="A p e l l i d o" required name="apellido">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="C é d u l a" required name="Nombre">
+
+                        </div>
+                        <div class="monto-pagar">
+                            <select>
+                                <optgroup label="Meses a pagar">
+                                    <option>Meses a Aportar</option>
+                                    <option>Enero</option>
+                                    <option>Febrero</option>
+                                    <option>Marzo</option>
+                                    <option>Abril</option>
+                                    <option>Mayo</option>
+                                    <option>Junio</option>
+                                    <option>Julio</option>
+                                    <option>Agosto</option>
+                                    <option>Septiembre</option>
+                                    <option>Octubre</option>
+                                    <option>Noviembre</option>
+                                    <option>Diciembre</option>
+                                </optgroup>
+                            </select>
+
+
+
+                            <input type="text" placeholder="$2.00 USDC" value="$2.00 USDC" readonly name="monto">
+
+                        </div>
+                        <div>
+                            <input type="number" placeholder="T e l e f o n o   d e l   T i t u l a r" required>
+                        </div>
+
+                        <div>
+                            <select>
+                                <optgroup label="Nombre del Banco">
+                                    <option>Banco</option>
+                                    <option>(0102)Banco de Venezuela</option>
+                                    <option>(0108)Banco Provincial</option>
+                                </optgroup>
+
+                            </select>
+                        </div>
+
+                        <div class="nombre">
+                            <input type="text" placeholder="C o n c e p t o" required>
+                            <select class="t-aporte" name="" id="">
+                                <option value="" selected disabled>Tipo de aporte</option>
+                                <option value="">Estatuto</option>
+                                <option value="">Donación</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="N ú m e r o  d e  R e f e r e n c i a" required>
+                        </div>
+
+                        <div class="file-upload-wrapper">
+
+                            <input type="file" id="file-upload" class="file-upload-input" accept="image/*" hidden />
+
+                            <img id="image-preview" class="image-preview" src="" />
+
+                            <button onclick="document.getElementById('file-upload').click()"
+                                class="file-upload-button">Cargar referencia</button>
+
+                            <Button type="submit" class="btn">Enviar pago</Button>
+                        </div>
+
+
+
+                    </form>
+                </div>
+            </div>
+
+
+     
+</body>
+
+</html>
